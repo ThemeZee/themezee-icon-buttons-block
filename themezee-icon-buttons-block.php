@@ -31,8 +31,8 @@ add_action( 'init', 'register_themezee_icon_buttons_block' );
  * Set up the Plugin Updater Constants.
  */
 define( 'THEMEZEE_ICON_BUTTONS_BLOCK_VERSION', '1.0' );
-define( 'THEMEZEE_ICON_BUTTONS_BLOCK_NAME', 'Icon Buttons Block' );
-define( 'THEMEZEE_ICON_BUTTONS_BLOCK_ID', 89731 );
+define( 'THEMEZEE_ICON_BUTTONS_BLOCK_NAME', 'Occasio Pro' );
+define( 'THEMEZEE_ICON_BUTTONS_BLOCK_ID', 232393 );
 define( 'THEMEZEE_ICON_BUTTONS_BLOCK_STORE_URL', 'https://themezee.com' );
 
 /**
