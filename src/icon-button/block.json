@@ -4,7 +4,7 @@
 	"name": "themezee/icon-button",
 	"version": "0.1.0",
 	"title": "Icon Button",
-	"category": "design",
+	"category": "themezee-blocks",
 	"parent": [ "themezee/icon-buttons" ],
 	"description": "Prompt visitors to take action with a button-style link with icon.",
 	"attributes": {

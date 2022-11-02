@@ -4,7 +4,7 @@
 	"name": "themezee/icon-buttons",
 	"version": "0.1.0",
 	"title": "Icon Buttons",
-	"category": "design",
+	"category": "themezee-blocks",
 	"description": "Prompt visitors to take action with a group of button-style links with icons.",
 	"supports": {
 		"anchor": true,
