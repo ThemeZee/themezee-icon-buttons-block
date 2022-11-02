@@ -5,7 +5,7 @@
 	"version": "0.1.0",
 	"title": "Icon Buttons",
 	"category": "themezee-blocks",
-	"description": "Prompt visitors to take action with a group of button-style links with icons.",
+	"description": "Create a group of icon buttons.",
 	"supports": {
 		"anchor": true,
 		"align": [ "wide", "full" ],

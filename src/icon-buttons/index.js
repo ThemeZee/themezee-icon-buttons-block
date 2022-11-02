@@ -1,7 +1,6 @@
 /**
  * WordPress dependencies
  */
-import { __ } from '@wordpress/i18n';
 import { registerBlockType } from '@wordpress/blocks';
 import { SVG, Path } from '@wordpress/components';
 
@@ -26,36 +25,6 @@ const icon = (
  */
 registerBlockType( metadata.name, {
 	icon,
-	example: {
-		innerBlocks: [
-			{
-				name: 'themezee/icon-button',
-				attributes: { text: __( 'Find out more' ) },
-				innerBlocks: [ { 
-					name: 'themezee/icon', 
-					attributes: {
-						iconName: "info",
-						iconLibrary: "wordpress",
-						iconWidth: "1.2em",
-						iconHeight: "1.2em",
-					}
-				} ]
-			},
-			{
-				name: 'themezee/icon-button',
-				attributes: { text: __( 'Contact us' ) },
-				innerBlocks: [ { 
-					name: 'themezee/icon', 
-					attributes: {
-						iconName: "atSymbol",
-						iconLibrary: "wordpress",
-						iconWidth: "1.2em",
-						iconHeight: "1.2em",
-					}
-				} ]
-			},
-		],
-	},
 	edit,
 	save,
 } );

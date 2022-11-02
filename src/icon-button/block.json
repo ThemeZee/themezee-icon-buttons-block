@@ -6,7 +6,7 @@
 	"title": "Icon Button",
 	"category": "themezee-blocks",
 	"parent": [ "themezee/icon-buttons" ],
-	"description": "Prompt visitors to take action with a button-style link with icon.",
+	"description": "Display a button with an icon.",
 	"attributes": {
 		"url": {
 			"type": "string",
