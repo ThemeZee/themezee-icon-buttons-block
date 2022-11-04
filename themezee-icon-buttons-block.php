@@ -21,10 +21,34 @@
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function register_themezee_icon_buttons_block() {
-	register_block_type( __DIR__ . '/build/icon-button' );
-	register_block_type( __DIR__ . '/build/icon-buttons' );
+	// Only register blocks if Icon block is activated.
+	if ( function_exists( 'register_themezee_icon_block' ) ) {
+		register_block_type( __DIR__ . '/build/icon-button' );
+		register_block_type( __DIR__ . '/build/icon-buttons' );
+	}
 }
 add_action( 'init', 'register_themezee_icon_buttons_block' );
+
+
+/**
+ * Show notice if Icon block is missing.
+ */
+function themezee_icon_buttons_block_admin_notice() {
+	global $pagenow;
+
+	if ( ! function_exists( 'register_themezee_icon_block' ) && in_array( $pagenow, array( 'index.php', 'update-core.php', 'plugins.php' ) ) && ! isset( $_GET['page'] ) && current_user_can( 'manage_options' ) ) :
+		?>
+
+		<div class="error">
+			<p>
+				<?php _e( 'The ThemeZee Icon Buttons Block needs the ThemeZee Icon Block in order to work. Please install and activate it.', 'themezee-icon-buttons-block' ); ?>
+			</p>
+		</div>
+
+		<?php
+	endif;
+}
+add_action( 'admin_notices', 'themezee_icon_buttons_block_admin_notice' );
 
 
 if ( ! function_exists( 'register_themezee_blocks_block_category' ) ) :
@@ -53,6 +77,7 @@ define( 'THEMEZEE_ICON_BUTTONS_BLOCK_VERSION', '1.0' );
 define( 'THEMEZEE_ICON_BUTTONS_BLOCK_NAME', 'Occasio Pro' );
 define( 'THEMEZEE_ICON_BUTTONS_BLOCK_ID', 232393 );
 define( 'THEMEZEE_ICON_BUTTONS_BLOCK_STORE_URL', 'https://themezee.com' );
+
 
 /**
  * Include License Settings and Plugin Updater.
