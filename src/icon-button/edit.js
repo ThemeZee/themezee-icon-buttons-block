@@ -47,8 +47,8 @@ function WidthPanel( { selectedWidth, setAttributes } ) {
 	}
 
 	return (
-		<PanelBody title={ __( 'Width settings' ) }>
-			<ButtonGroup aria-label={ __( 'Button width' ) }>
+		<PanelBody title={ __( 'Width settings', 'themezee-icon-buttons-block' ) }>
+			<ButtonGroup aria-label={ __( 'Button width', 'themezee-icon-buttons-block' ) }>
 				{ [ 25, 50, 75, 100 ].map( ( widthValue ) => {
 					return (
 						<Button
@@ -202,8 +202,8 @@ function ButtonEdit( props ) {
 					{ innerBlocksProps.children }
 					<RichText
 						ref={ richTextRef }
-						aria-label={ __( 'Button text' ) }
-						placeholder={ placeholder || __( 'Add text…' ) }
+						aria-label={ __( 'Button text', 'themezee-icon-buttons-block' ) }
+						placeholder={ placeholder || __( 'Add text…', 'themezee-icon-buttons-block' ) }
 						value={ text }
 						onChange={ ( value ) => setButtonText( value ) }
 						withoutInteractiveFormatting
@@ -229,7 +229,7 @@ function ButtonEdit( props ) {
 					<ToolbarButton
 						name="link"
 						icon={ link }
-						title={ __( 'Link' ) }
+						title={ __( 'Link', 'themezee-icon-buttons-block' ) }
 						shortcut={ displayShortcut.primary( 'k' ) }
 						onClick={ startEditing }
 					/>
@@ -238,7 +238,7 @@ function ButtonEdit( props ) {
 					<ToolbarButton
 						name="link"
 						icon={ linkOff }
-						title={ __( 'Unlink' ) }
+						title={ __( 'Unlink', 'themezee-icon-buttons-block' ) }
 						shortcut={ displayShortcut.primaryShift( 'k' ) }
 						onClick={ unlink }
 						isActive={ true }
@@ -286,7 +286,7 @@ function ButtonEdit( props ) {
 			</InspectorControls>
 			<InspectorControls __experimentalGroup="advanced">
 				<TextControl
-					label={ __( 'Link rel' ) }
+					label={ __( 'Link rel', 'themezee-icon-buttons-block' ) }
 					value={ rel || '' }
 					onChange={ onSetLinkRel }
 				/>
