@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Themes + Pro Versions + Add-ons\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/themezee-icon-"
 "buttons-block\n"
-"POT-Creation-Date: 2022-11-08T17:07:13+00:00\n"
-"PO-Revision-Date: 2022-11-08 18:07+0100\n"
+"POT-Creation-Date: 2022-11-09T10:54:14+00:00\n"
+"PO-Revision-Date: 2022-11-09 11:54+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -101,7 +101,27 @@ msgstr ""
 "Updates und Support zu erhalten. <a href=\"%2$s\">Lizenzschlüssel eingeben</"
 "a>"
 
-#: themezee-icon-buttons-block.php:51
+#: themezee-icon-buttons-block.php:32 build/icon-button/block.json
+msgctxt "block title"
+msgid "Icon Button"
+msgstr "Icon Button"
+
+#: themezee-icon-buttons-block.php:33 build/icon-button/block.json
+msgctxt "block description"
+msgid "Display a button with an icon."
+msgstr "Einen Button mit Icon anzeigen."
+
+#: themezee-icon-buttons-block.php:37 build/icon-buttons/block.json
+msgctxt "block title"
+msgid "Icon Buttons"
+msgstr "Icon Buttons"
+
+#: themezee-icon-buttons-block.php:38 build/icon-buttons/block.json
+msgctxt "block description"
+msgid "Create a group of icon buttons."
+msgstr "Erstelle eine Gruppe von Icon Buttons."
+
+#: themezee-icon-buttons-block.php:60
 msgid ""
 "The ThemeZee Icon Buttons Block needs the ThemeZee Icon Block in order to "
 "work. Please install and activate it."
@@ -138,16 +158,6 @@ msgid "Link rel"
 msgstr "Link rel"
 
 #: build/icon-button/block.json
-msgctxt "block title"
-msgid "Icon Button"
-msgstr "Icon Button"
-
-#: build/icon-button/block.json
-msgctxt "block description"
-msgid "Display a button with an icon."
-msgstr "Einen Button mit Icon anzeigen."
-
-#: build/icon-button/block.json
 msgctxt "block style label"
 msgid "Fill"
 msgstr "Füllen"
@@ -156,13 +166,3 @@ msgstr "Füllen"
 msgctxt "block style label"
 msgid "Outline"
 msgstr "Outline"
-
-#: build/icon-buttons/block.json
-msgctxt "block title"
-msgid "Icon Buttons"
-msgstr "Icon Buttons"
-
-#: build/icon-buttons/block.json
-msgctxt "block description"
-msgid "Create a group of icon buttons."
-msgstr "Erstelle eine Gruppe von Icon Buttons."

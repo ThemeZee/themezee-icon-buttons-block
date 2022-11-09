@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-11-08T17:07:13+00:00\n"
+"POT-Creation-Date: 2022-11-09T10:54:14+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: themezee-icon-buttons-block\n"
@@ -94,7 +94,31 @@ msgstr ""
 msgid "Please enter your license key for the %1$s in order to receive updates and support. <a href=\"%2$s\">Enter License Key</a>"
 msgstr ""
 
-#: themezee-icon-buttons-block.php:51
+#: themezee-icon-buttons-block.php:32
+#: build/icon-button/block.json
+msgctxt "block title"
+msgid "Icon Button"
+msgstr ""
+
+#: themezee-icon-buttons-block.php:33
+#: build/icon-button/block.json
+msgctxt "block description"
+msgid "Display a button with an icon."
+msgstr ""
+
+#: themezee-icon-buttons-block.php:37
+#: build/icon-buttons/block.json
+msgctxt "block title"
+msgid "Icon Buttons"
+msgstr ""
+
+#: themezee-icon-buttons-block.php:38
+#: build/icon-buttons/block.json
+msgctxt "block description"
+msgid "Create a group of icon buttons."
+msgstr ""
+
+#: themezee-icon-buttons-block.php:60
 msgid "The ThemeZee Icon Buttons Block needs the ThemeZee Icon Block in order to work. Please install and activate it."
 msgstr ""
 
@@ -127,16 +151,6 @@ msgid "Link rel"
 msgstr ""
 
 #: build/icon-button/block.json
-msgctxt "block title"
-msgid "Icon Button"
-msgstr ""
-
-#: build/icon-button/block.json
-msgctxt "block description"
-msgid "Display a button with an icon."
-msgstr ""
-
-#: build/icon-button/block.json
 msgctxt "block style label"
 msgid "Fill"
 msgstr ""
@@ -144,14 +158,4 @@ msgstr ""
 #: build/icon-button/block.json
 msgctxt "block style label"
 msgid "Outline"
-msgstr ""
-
-#: build/icon-buttons/block.json
-msgctxt "block title"
-msgid "Icon Buttons"
-msgstr ""
-
-#: build/icon-buttons/block.json
-msgctxt "block description"
-msgid "Create a group of icon buttons."
 msgstr ""

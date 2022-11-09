@@ -21,13 +21,22 @@
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function register_themezee_icon_buttons_block() {
+
+	// Load translation for PHP files.
+	load_plugin_textdomain( 'themezee-icon-buttons-block', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+
 	// Only register blocks if Icon block is activated.
 	if ( function_exists( 'register_themezee_icon_block' ) ) {
-		register_block_type( __DIR__ . '/build/icon-button' );
-		register_block_type( __DIR__ . '/build/icon-buttons' );
 
-		// Load translation for PHP files.
-		load_plugin_textdomain( 'themezee-icon-buttons-block', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		register_block_type( __DIR__ . '/build/icon-button', [
+			'title'       => _x( 'Icon Button', 'block title', 'themezee-icon-buttons-block' ),
+			'description' => _x( 'Display a button with an icon.', 'block description', 'themezee-icon-buttons-block' ),
+		] );
+
+		register_block_type( __DIR__ . '/build/icon-buttons', [
+			'title'       => _x( 'Icon Buttons', 'block title', 'themezee-icon-buttons-block' ),
+			'description' => _x( 'Create a group of icon buttons.', 'block description', 'themezee-icon-buttons-block' ),
+		] );
 
 		// Load translation for JS files.
 		wp_set_script_translations( 'themezee-icon-buttons-editor-script', 'themezee-icon-buttons-block', plugin_dir_path( __FILE__ ) . 'languages' );
