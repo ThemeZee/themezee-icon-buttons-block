@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       ThemeZee Icon Buttons Block
- * Description:       Display a SVG icon.
+ * Description:       Display a group of icon buttons.
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           1.0
